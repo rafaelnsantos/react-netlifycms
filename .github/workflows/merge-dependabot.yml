@@ -1,0 +1,47 @@
+name: Dependabot auto-merge
+on: pull_request_target
+
+permissions:
+  pull-requests: write
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: node_modules
+        key: node_modules-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          node_modules-
+
+    - name: Cypress run
+      run: |
+        yarn --frozen-lockfile
+        yarn test
+
+  dependabot:
+    runs-on: ubuntu-latest
+    depends-on: test
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    steps:
+      - name: Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v1.1.1
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Enable auto-merge for Dependabot PRs
+        run: gh pr merge --auto --merge "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
