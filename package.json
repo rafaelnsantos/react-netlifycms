@@ -29,7 +29,7 @@
   "types": "./lib/esm/index.d.ts",
   "license": "MIT",
   "devDependencies": {
-    "@monx/eslint-config-next": "^1.0.4",
+    "@monx/eslint-config-next": "^1.0.7",
     "@monx/versioning": "^1.0.1",
     "@types/netlify-identity-widget": "^1.9.2",
     "@types/node": "^14.0.4",
