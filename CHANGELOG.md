@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/rafaelnsantos/react-netlifycms/compare/v1.1.1...v1.1.2) (2021-09-20)
+
+
+### Bug Fixes
+
+* dependabot commit msg ([1993671](https://github.com/rafaelnsantos/react-netlifycms/commit/19936716dca14d9b9891ff08c58d339a8fc6845b))
+
 ## [1.1.1](https://github.com/rafaelnsantos/react-netlifycms/compare/v1.1.0...v1.1.1) (2021-09-20)
 
 
