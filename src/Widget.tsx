@@ -3,11 +3,6 @@ import { CmsField, CmsWidgetControlProps } from 'netlify-cms-core';
 
 type WidgetParams<T> = T & CmsField;
 
-export interface WidgetComponentProps<T> extends CmsWidgetControlProps<T> {
-  setActiveStyle: () => void;
-  setInactiveStyle: () => void;
-}
-
 function Widget<T, P = CmsField>(
   Component: ComponentType<CmsWidgetControlProps<T> & { params: WidgetParams<P> }>,
   config?: {
@@ -15,7 +10,7 @@ function Widget<T, P = CmsField>(
     activateFix?: boolean;
   }
 ) {
-  return class WidgetComponent extends React.Component<WidgetComponentProps<T>> {
+  return class WidgetComponent extends React.Component<CmsWidgetControlProps<T>> {
     getParams = (): WidgetParams<P> => {
       const params: any = {};
       this.props.field.forEach((value, key) => {
@@ -24,27 +19,10 @@ function Widget<T, P = CmsField>(
       return params;
     };
 
-    isValid = () => (config && config.isValid && config.isValid(this.props.value)) || true;
+    isValid = () => config?.isValid?.(this.props.value) || true;
 
     render() {
-      const { forID, classNameWrapper, field, setActiveStyle, setInactiveStyle } = this.props;
-      return (
-        <div
-          id={forID}
-          className={classNameWrapper}
-          onFocus={config?.activateFix ? undefined : setActiveStyle}
-          onBlur={setInactiveStyle}
-        >
-          <Component
-            value={this.props.value}
-            onChange={this.props.onChange}
-            forID={forID}
-            field={field}
-            classNameWrapper={classNameWrapper}
-            params={this.getParams()}
-          />
-        </div>
-      );
+      return <Component {...this.props} params={this.getParams()} />;
     }
   };
 }
