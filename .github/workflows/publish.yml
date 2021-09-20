@@ -9,8 +9,7 @@ on:
       - none
 
 env:
-  NPM_TOKEN: ${{secrets.NPM_TOKEN}}
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
 jobs:
   build:
@@ -23,6 +22,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
+        registry-url: 'https://registry.npmjs.org'
 
     - name: Cache node_modules
       uses: actions/cache@v2
@@ -41,3 +41,5 @@ jobs:
       run: |
         yarn release
         npm publish --access public
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
