@@ -1,7 +1,7 @@
 import React, { ComponentType } from 'react';
 import { CmsField, CmsWidgetControlProps } from 'netlify-cms-core';
 
-type WidgetParams<T> = T & CmsField;
+export type WidgetParams<P, N = string> = CmsField & P & { widget: N };
 
 function Widget<T, P = CmsField>(
   Component: ComponentType<CmsWidgetControlProps<T> & { params: WidgetParams<P> }>,
