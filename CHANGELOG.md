@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/rafaelnsantos/react-netlifycms/compare/v1.0.3...v1.0.4) (2021-09-20)
+
+
+### Bug Fixes
+
+* widget ([d0ff680](https://github.com/rafaelnsantos/react-netlifycms/commit/d0ff6808a29516d54347ac2dd6467bac7585727e))
+
 ## [1.0.3](https://github.com/rafaelnsantos/react-netlifycms/compare/v1.0.2...v1.0.3) (2021-09-19)
 
 
