@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/rafaelnsantos/react-netlifycms/compare/v1.1.0...v1.1.1) (2021-09-20)
+
+
+### Bug Fixes
+
+* remove umd ([e2c0f39](https://github.com/rafaelnsantos/react-netlifycms/commit/e2c0f392aef49964e230a7d7137aa86da9aad042))
+
 # [1.1.0](https://github.com/rafaelnsantos/react-netlifycms/compare/v1.0.4...v1.1.0) (2021-09-20)
 
 
