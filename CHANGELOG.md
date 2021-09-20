@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/rafaelnsantos/react-netlifycms/compare/v1.0.4...v1.1.0) (2021-09-20)
+
+
+### Features
+
+* simplify ([2554316](https://github.com/rafaelnsantos/react-netlifycms/commit/2554316edf479765aae0e8d5118de28e3fff224b))
+
 ## [1.0.4](https://github.com/rafaelnsantos/react-netlifycms/compare/v1.0.3...v1.0.4) (2021-09-20)
 
 
