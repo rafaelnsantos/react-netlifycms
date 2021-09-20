@@ -847,10 +847,10 @@
     mkdirp "^0.5.1"
     rimraf "^2.5.2"
 
-"@monx/eslint-config-next@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@monx/eslint-config-next/-/eslint-config-next-1.0.4.tgz#930fb8133b7036cdb8a8e31273721d26950a3903"
-  integrity sha512-OKRVAOf3NgVHOaq/BX4UzEtznSOLRqcrqhCvIfmnklKgvKii85pQO68fDsp2arb5ZZRfziYJ3+eqqvybDyzo+A==
+"@monx/eslint-config-next@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@monx/eslint-config-next/-/eslint-config-next-1.0.7.tgz#4825f59dee777cd103cde111212e46fae26acdd0"
+  integrity sha512-Wz+0nHr+2NxMM66lkUXvUSW0HNhe3mCzQC1jqclvgH2h0yKQhlxygq4mtYujjqZ6OCV+bA4tmQc3n4PTvg3v0g==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^2.17.0"
     "@typescript-eslint/parser" "^2.17.0"
