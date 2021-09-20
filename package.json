@@ -32,7 +32,7 @@
     "@monx/eslint-config-next": "^1.0.7",
     "@monx/versioning": "^1.0.1",
     "@types/netlify-identity-widget": "^1.9.2",
-    "@types/node": "^14.0.4",
+    "@types/node": "^16.9.4",
     "@types/react": "^17.0.21",
     "awesome-typescript-loader": "^5.2.1",
     "eslint": "^7.32.0",
