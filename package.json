@@ -13,10 +13,9 @@
   "scripts": {
     "commit": "git-cz",
     "prebuild": "rimraf lib",
-    "build": "yarn build:esm && yarn build:cjs && yarn build:umd",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
-    "build:umd": "webpack",
+    "build": "yarn build:cjs && yarn build:esm",
+    "build:esm": "tsc -p tsconfig.json",
+    "build:cjs": "tsc -p tsconfig-cjs.json",
     "release": "semantic-release",
     "test": "yarn build"
   },
@@ -24,26 +23,24 @@
     "netlify-cms-app": "^2.15.44",
     "netlify-identity-widget": "^1.9.2"
   },
-  "main": "./lib/umd/index.js",
+  "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
-  "types": "./lib/esm/index.d.ts",
   "license": "MIT",
   "devDependencies": {
     "@monx/eslint-config-next": "^1.0.7",
     "@monx/versioning": "^1.0.1",
     "@types/netlify-identity-widget": "^1.9.2",
     "@types/react": "^17.0.21",
-    "awesome-typescript-loader": "^5.2.1",
     "eslint": "^7.32.0",
     "husky": "^7.0.2",
     "rimraf": "^3.0.2",
-    "typescript": "^4.4.3",
-    "webpack": "^5.53.0",
-    "webpack-bundle-analyzer": "^4.4.2",
-    "webpack-cli": "^4.8.0"
+    "typescript": "^4.4.3"
   },
   "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
-  }
+  },
+  "files": [
+    "lib/"
+  ]
 }
