@@ -1,3 +1,5 @@
+## [1.1.19](https://github.com/rafaelnsantos/react-netlifycms/compare/v1.1.18...v1.1.19) (2021-10-25)
+
 ## [1.1.18](https://github.com/rafaelnsantos/react-netlifycms/compare/v1.1.17...v1.1.18) (2021-10-22)
 
 ## [1.1.17](https://github.com/rafaelnsantos/react-netlifycms/compare/v1.1.16...v1.1.17) (2021-10-21)
