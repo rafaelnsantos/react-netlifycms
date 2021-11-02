@@ -20,7 +20,7 @@
     "test": "yarn build"
   },
   "dependencies": {
-    "netlify-cms-app": "^2.15.57",
+    "netlify-cms-app": "^2.15.58",
     "netlify-identity-widget": "^1.9.2"
   },
   "main": "./lib/cjs/index.js",
