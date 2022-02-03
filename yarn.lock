@@ -1286,10 +1286,10 @@
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.0.tgz#69a23a3ad29caf0097f06eda59b361ee2f0639f6"
   integrity sha1-aaI6OtKcrwCX8G7aWbNh7i8GOfY=
 
-"@types/netlify-identity-widget@^1.9.2":
-  version "1.9.2"
-  resolved "https://registry.yarnpkg.com/@types/netlify-identity-widget/-/netlify-identity-widget-1.9.2.tgz#ea3d7f2a60b80eb4870576e83926f16d3233d12b"
-  integrity sha512-DqtBJtsZKzXCOGqwN+tiucnZyoDgM67MmgvBqQ8Cu6721uxw9b2j4rs30F19KYOnJH7myEporEWfwnrLVW1CYw==
+"@types/netlify-identity-widget@^1.9.3":
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/@types/netlify-identity-widget/-/netlify-identity-widget-1.9.3.tgz#cc4a10cc4b61c7e2e31fa4757b504136218c9829"
+  integrity sha512-xAzPO2TM8Z+gVZ/3wXUM5WIKWEE0TG+uD6u/4Dq0tgA+bwrb+qyIqhlaIyJZcXN6MienvYxUH3DKUSYb8evfYA==
 
 "@types/node@*", "@types/node@>= 8", "@types/node@>=6":
   version "16.9.4"
