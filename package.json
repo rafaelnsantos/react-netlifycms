@@ -30,7 +30,7 @@
     "@monx/eslint-config-next": "^1.0.7",
     "@monx/versioning": "^1.0.1",
     "@types/netlify-identity-widget": "^1.9.3",
-    "@types/react": "^18.0.9",
+    "@types/react": "^18.0.26",
     "eslint": "^8.14.0",
     "husky": "^8.0.0",
     "rimraf": "^3.0.2",
